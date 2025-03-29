@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose between playing Snake or Minesweeper online for free.">
+    <title>Cloud Games - Choose Your Game</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    padding: 50px 20px;
+    background-color: #272727;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+.game {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+
+}
+
+
+.game img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+
+.btn:hover {
+    background-color: #e64a19;
+
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1f1f1f;
+
+}
+
+#login-logout {
+    display: flex;
+    align-items: center;
+}
+
+#login-logout button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-logout button:hover {
+    background-color: #45a049;
+}
+
+#authspan {
+    padding-bottom: 2%;
+    color: #006EB6;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#userProfilePicture {
+    width: 40px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #fff;
+}
+
+#logoimg {
+    width: 50px;
+    height: 50px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cloud Games</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="login-logout">
+            <div class="input">
+                <button id="google-login-btn" class="google-button" style="display: none;">
+                    <i class="fab fa-google"></i> Google Login
+                </button>
+            </div>
+            <div class="input">
+                <button id="google-logout-btn" class="google-button" style="display: none;">
+                    <i class="fab fa-google"></i> Google Logout
+                </button>
+            </div>
+            <div>
+                <img id="userProfilePicture" alt="profile pic from Google" style="display: none;">
+            </div>
+        </div>
+    </header>
+    <img src="logo.png">
+    <section id="hero">
+        <h2>Choose Your Game</h2>
+        <p>Play Snake or Minesweeper instantly online!</p>
+    </section>
+    <section id="games">
+        <h2>Available Games</h2>
+        <div class="game-list">
+            <div class="game">
+                <img src="snake.jpg" alt="Snake Game">
+                <h3>Snake Game</h3>
+                <a href="snake/index.html" class="btn">Play Snake</a>
+            </div>
+            <div class="game">
+                <img src="minesweeper.jpg" alt="Minesweeper Game">
+                <h3>Minesweeper</h3>
+                <a href="mindsweeper/mindsweep.html" class="btn">Play Minesweeper</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Cloud Games. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
