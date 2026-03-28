@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world video</title>
+</head>
+
+<body style="background-color: black; margin: 0 auto; display: block;">
+    <video id="myVideo" width="720px" controls>
+    </video>
+
+</body>
+<script>
+    htmlFileName = document.location.pathname.split('/').pop().split(".")[0];
+    const video = document.getElementById('myVideo');
+    const source = document.createElement('source');
+    source.src = `${htmlFileName}_status.mp4`;
+    source.type = 'video/mp4';
+    video.appendChild(source);
+    video.load();
+</script>
+
+</html>
